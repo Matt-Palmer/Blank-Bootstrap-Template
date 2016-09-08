@@ -1,0 +1,138 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	position: relative;
+	min-height: 100%;
+}
+
+h1{
+	text-align: center;
+	line-height: 100vh;
+	margin: 0;
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+#fixtures,
+#home{
+	width: 100%;
+	min-height: 100vh;
+	background-color: lightgray;
+}
+
+#teams,
+#league{
+	width: 100%;
+	min-height: 100vh;
+	background-color: gray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 0;
+}
+
+.navbar-nav .nav-item{
+	width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav .nav-link{
+	padding: 0;
+	font-weight: 500;
+	color: black;
+}
+
+.nav-tabs .nav-link.active{
+	text-decoration: underline;
+}
+
+.overlay{
+	position: fixed;
+	height: 10vh;
+	width: 100%;
+	background-color: transparent;
+	z-index: 1;
+	transition: background-color 3s;
+}
+
+.overlay.active-overlay{
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+#nav-item-container{
+	display: none;
+	opacity: 0;
+	list-style-type: none;
+	transition: all 3s;
+	border: 0;
+}
+
+#nav-item-container #custom-nav-item{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+}
+
+#nav-item-container #custom-nav-link{
+	text-align: center;
+	font-weight: 600;
+	display: block;
+	color: black;
+	border: 0;
+	padding: 0;
+}
+
+#nav-item-container.active-nav{
+	opacity: 1;
+}
+
+.jumbotron{
+	margin: 0;
+	border-radius: 0;
+	height: 50vh;
+	text-align: center; /*remove once image is in place*/
+	line-height: 50vh; /*remove once image is in place*/
+	padding: 0; /*remove once image is in place*/
+}
+
+.row{
+	margin: 0;
+}
+
+#thumbnail{
+	margin-top: 10px;
+}
+
+#thumbnail img{
+	width: 130px;
+	height: 130px;
+}
+
+
+
+.form-group{
+	padding-top: 10px;
+}
+
+// Small devices (landscape phones, 544px and up)
+@media (min-width: 544px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
