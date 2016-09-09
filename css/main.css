@@ -15,6 +15,20 @@ h1{
 	margin: 0;
 }
 
+p{
+	margin-bottom: 0;
+	padding-top: 10px;
+	text-align: justify;
+}
+
+#back-to-top{
+	display: none;
+	background-color: transparent;
+	border: 0;
+	padding: 8px 12px;
+	float: right;
+}
+
 .container-fluid{
 	padding: 0;
 }
@@ -23,38 +37,21 @@ h1{
 #home{
 	width: 100%;
 	min-height: 100vh;
-	background-color: lightgray;
+	background-color: #e0e2d5;
 }
 
-#teams,
+#contact-form,
 #league{
 	width: 100%;
 	min-height: 100vh;
-	background-color: gray;
+	background-color: #6db8bb;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-
-.navbar-nav .nav-item + .nav-item {
-    margin-left: 0;
-}
-
-.navbar-nav .nav-item{
-	width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.navbar-nav .nav-link{
-	padding: 0;
-	font-weight: 500;
-	color: black;
-}
-
-.nav-tabs .nav-link.active{
-	text-decoration: underline;
+#contact-form,
+#league{
+	position: relative;
 }
 
 .overlay{
@@ -67,7 +64,8 @@ h1{
 }
 
 .overlay.active-overlay{
-	background-color: rgba(255, 255, 255, 0.75);
+	/*background-color: rgba(224, 226, 213, 0.75);*/
+	background-color: rgba(109, 184, 187, 1);
 }
 
 #nav-item-container{
@@ -97,6 +95,11 @@ h1{
 	opacity: 1;
 }
 
+#nav-item-container #custom-nav-link.active{
+	color: #e0e2d5;
+	text-decoration: underline;
+}
+
 .jumbotron{
 	margin: 0;
 	border-radius: 0;
@@ -119,11 +122,35 @@ h1{
 	height: 130px;
 }
 
+/*******use the below code if the content needs to be centered on the page*******/
 
+/*#thumbnail-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}*/
 
 .form-group{
 	padding-top: 10px;
 }
+
+/*******use the below code if the content needs to be centered on the page*******/
+
+/*#form-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}*/
+
+#social-media-list img{
+	width: 40px;
+	height: 40px;
+}
+
 
 // Small devices (landscape phones, 544px and up)
 @media (min-width: 544px) { ... }

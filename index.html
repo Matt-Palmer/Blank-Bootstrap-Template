@@ -9,6 +9,8 @@
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 </head>
 <body data-spy="scroll" data-target="#nav-container">
 	<div class="container-fluid">
@@ -17,6 +19,9 @@
 				<nav id="nav">
 					<button id="myButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggled-menu" aria-controls="toggled-menu" aria-expanded="false" aria-label="Toggle navigation">
 						&#9776;
+					</button>
+					<button id="back-to-top">
+						<i class="fa fa-chevron-up"></i>
 					</button>
 					<ul id="nav-item-container" class="nav nav-tabs" role="tablist">
 						<li id="custom-nav-item" class="nav-item">
@@ -29,7 +34,7 @@
 							<a id="custom-nav-link" href="#fixtures" class="nav-link">Fixtures</a>
 						</li>
 						<li id="custom-nav-item" class="nav-item">
-							<a id="custom-nav-link" href="#teams" class="nav-link">Teams</a>
+							<a id="custom-nav-link" href="#contact-form" class="nav-link">Teams</a>
 						</li>
 					</ul>
 				</nav>
@@ -41,37 +46,168 @@
 
 
 		<div id="home">
-			<h1>Home</h1>
+			<div class="row">
+				<div class="col-xs-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla consectetur varius. Maecenas sed ullamcorper leo. Phasellus id pulvinar libero, vitae euismod tellus. Proin auctor consequat ligula id imperdiet. Ut laoreet neque a quam tempus, ut dignissim nisi imperdiet. Nullam facilisis, arcu quis porta finibus, magna orci placerat tellus, quis accumsan erat ante ut est. Sed vitae felis rhoncus, fermentum turpis ac, ornare tortor. Pellentesque ut dictum risus, eu scelerisque nisl. Sed venenatis blandit sem, eu gravida nisi. Suspendisse sollicitudin sagittis pharetra. Fusce rhoncus augue ut erat ornare, ac facilisis mauris facilisis.</p>
+				</div>
+			</div>
+			
 		</div>
 
 		<div id="league">
 			<div class="row">
-				<div id="thumbnail" class="col-xs-6 text-xs-center"><img src="" alt="cake-image" class="img-thumbnail"></div>
-				<div id="thumbnail" class="col-xs-6 text-xs-center"><img src="" alt="cake-image" class="img-thumbnail"></div>
-				<div id="thumbnail" class="col-xs-6 text-xs-center"><img src="" alt="cake-image" class="img-thumbnail"></div>
-				<div id="thumbnail" class="col-xs-6 text-xs-center"><img src="" alt="cake-image" class="img-thumbnail"></div>
-				<div id="thumbnail" class="col-xs-6 text-xs-center"><img src="" alt="cake-image" class="img-thumbnail"></div>
-				<div id="thumbnail" class="col-xs-6 text-xs-center"><img src="" alt="cake-image" class="img-thumbnail"></div>
+				<div id="thumbnail-container">
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-1.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-2.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-3.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-4.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-1.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-2.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-3.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+					<div id="thumbnail" class="col-xs-6 text-xs-center">
+						<a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+							<img src="images/image-4.jpg" alt="cake-image" class="img-thumbnail">
+						</a>
+					</div>
+
+				</div>
 			</div>
 		</div>
 
-		<div id="fixtures">
-			<h1>Fixtures</h1>
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+				    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				        <h4 class="modal-title">Modal title</h4>
+				    </div>
+
+				    <div class="row">
+				    	<div class="col-xs-6">
+				    		<a href="images/image-1.jpg" data-lightbox="image"><img src="images/image-1.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-2.jpg" data-lightbox="image"><img src="images/image-2.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-3.jpg" data-lightbox="image"><img src="images/image-3.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-4.jpg" data-lightbox="image"><img src="images/image-4.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+
+				    	<div class="col-xs-6">
+				    		<a href="images/image-1.jpg" data-lightbox="image"><img src="images/image-1.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-2.jpg" data-lightbox="image"><img src="images/image-2.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-3.jpg" data-lightbox="image"><img src="images/image-3.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-4.jpg" data-lightbox="image"><img src="images/image-4.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+
+				    	<div class="col-xs-6">
+				    		<a href="images/image-1.jpg" data-lightbox="image"><img src="images/image-1.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-2.jpg" data-lightbox="image"><img src="images/image-2.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-3.jpg" data-lightbox="image"><img src="images/image-3.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    	<div class="col-xs-6">
+				    		<a href="images/image-4.jpg" data-lightbox="image"><img src="images/image-4.jpg" style="width: 100%; height: 100%; padding: 5px;"></a>
+				    	</div>
+				    </div>
+				</div>
+				
+			</div>
+			
 		</div>
 
-		<div id="teams">
+		<div id="fixtures">
+			<div class="row">
+				<div class="col-xs-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla consectetur varius. Maecenas sed ullamcorper leo. Phasellus id pulvinar libero, vitae euismod tellus. Proin auctor consequat ligula id imperdiet. Ut laoreet neque a quam tempus, ut dignissim nisi imperdiet. Nullam facilisis, arcu quis porta finibus, magna orci placerat tellus, quis accumsan erat ante ut est. Sed vitae felis rhoncus, fermentum turpis ac, ornare tortor. Pellentesque ut dictum risus, eu scelerisque nisl. Sed venenatis blandit sem, eu gravida nisi. Suspendisse sollicitudin sagittis pharetra. Fusce rhoncus augue ut erat ornare, ac facilisis mauris facilisis.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact-form">
 			<form>
 				<div class="row">
-					<div class="form-group col-xs-12">
-						<label for="name">Name</label>
-						<input type="text" class="form-control" id="name" placeholder="Enter you name">
-					</div>
-					<div class="form-group col-xs-12">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="Enter your email">
+					<div id="form-container">
+						<div class="form-group col-xs-12">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name" placeholder="Enter you name">
+						</div>
+						<div class="form-group col-xs-12">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="Enter your email">
+						</div>
+						<div class="form-group col-xs-12">
+							<label for="subject">Subject</label>
+							<input type="text" class="form-control" id="subject" placeholder="Enter message subject">
+						</div>
+						<div class="form-group col-xs-12">
+							<label for="message">Message</label>
+							<textarea class="form-control" id="message" placeholder="Enter your message" rows="6"></textarea>
+						</div>
 					</div>
 				</div>
 			</form>
+
+			<div class="row">
+				<div id="social-media-list" class="text-xs-center col-xs-12">
+					<div class="col-xs-3">
+						<a href="#" target="_blank"><img src="images/facebook-logo.png"></a>
+					</div>
+					<div class="col-xs-3">
+						<a href="#" target="_blank"><img src="images/twitter-logo.png"></a>
+					</div>
+					<div class="col-xs-3">
+						<a href="#" target="_blank"><img src="images/instagram-logo.png"></a>
+					</div>
+					<div class="col-xs-3">
+						<a href="#" target="_blank"><img src="images/pinterest-logo.png"></a>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 
 	</div>
@@ -81,6 +217,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
 
 </body>
 </html>
