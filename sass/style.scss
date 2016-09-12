@@ -1,5 +1,6 @@
 
 @import "included-file";
+$my-color = "color: red"
 
 body {
 	background: #fff;
@@ -13,11 +14,22 @@ body {
 	}
 }
 
-.new-class{
+.matts-class{
 	display: block;
+	color: red;
+	background-color: blue;
+	width: 100px;
+
+	.matts-nested-class{
+		display: block;
+	}
+
+	.another-nested-class{
+		color: blue;
+
+		.a-class{
+			color: red;
+		}
+	}
 }
 
-.another-class{
-	color: blue;
-	display: block;
-}

@@ -9,9 +9,14 @@ body {
   .class .nested-class {
     display: none; }
 
-.new-class {
-  display: block; }
-
-.another-class {
-  color: blue;
-  display: block; }
+.matts-class {
+  display: block;
+  color: red;
+  background-color: blue;
+  width: 100px; }
+  .matts-class .matts-nested-class {
+    display: block; }
+  .matts-class .another-nested-class {
+    color: blue; }
+    .matts-class .another-nested-class .a-class {
+      color: red; }
