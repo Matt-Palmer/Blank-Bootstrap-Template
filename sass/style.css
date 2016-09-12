@@ -1,0 +1,17 @@
+.included-class {
+  display: block; }
+
+body {
+  background: #fff; }
+
+.class {
+  display: block; }
+  .class .nested-class {
+    display: none; }
+
+.new-class {
+  display: block; }
+
+.another-class {
+  color: blue;
+  display: block; }

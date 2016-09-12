@@ -1,0 +1,23 @@
+
+@import "included-file";
+
+body {
+	background: #fff;
+}
+
+.class{
+	display: block;
+
+	.nested-class{
+		display: none;
+	}
+}
+
+.new-class{
+	display: block;
+}
+
+.another-class{
+	color: blue;
+	display: block;
+}
