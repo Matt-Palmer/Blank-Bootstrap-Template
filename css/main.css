@@ -1,3 +1,18 @@
+/******CONTENTS******
+*********************
+
+1) General styling
+2) Nav styling
+3) Modified bootstrap
+4) Section styling
+
+*********************
+********************/
+
+/********************
+*1) General styling**
+********************/
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -9,16 +24,24 @@ html, body{
 	min-height: 100%;
 }
 
-h1{
-	text-align: center;
-	line-height: 100vh;
-	margin: 0;
-}
-
 p{
 	margin-bottom: 0;
 	padding-top: 10px;
 	text-align: justify;
+}
+
+/*********************
+**(1) General styling*
+*********************/
+
+/*********************
+****(2) Nav styling***
+*********************/
+
+#myButton,
+#back-to-top{
+	width: 40px;
+	height: 40px;
 }
 
 #back-to-top{
@@ -29,38 +52,13 @@ p{
 	float: right;
 }
 
-.container-fluid{
-	padding: 0;
-}
-
-#fixtures,
-#home{
-	width: 100%;
-	min-height: 100vh;
-	background-color: #e0e2d5;
-}
-
-#contact-form,
-#league{
-	width: 100%;
-	min-height: 100vh;
-	background-color: #6db8bb;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-#contact-form,
-#league{
-	position: relative;
-}
-
 .overlay{
 	position: fixed;
 	height: 10vh;
 	width: 100%;
 	background-color: transparent;
 	z-index: 1;
-	transition: background-color 3s;
+	transition: background-color 1s;
 }
 
 .overlay.active-overlay{
@@ -72,7 +70,7 @@ p{
 	display: none;
 	opacity: 0;
 	list-style-type: none;
-	transition: all 3s;
+	transition: all 1s;
 	border: 0;
 }
 
@@ -100,6 +98,25 @@ p{
 	text-decoration: underline;
 }
 
+#social-media-list img{
+	width: 40px;
+	height: 40px;
+}
+
+/*********************
+****(2) Nav styling***
+**********************/
+
+
+
+/*********************
+(3) Modified bootstrap
+**********************/
+
+.container-fluid{
+	padding: 0;
+}
+
 .jumbotron{
 	margin: 0;
 	border-radius: 0;
@@ -112,6 +129,60 @@ p{
 .row{
 	margin: 0;
 }
+
+/*********************
+(3) Modified bootstrap
+**********************/
+
+
+/*********************
+*(4) Section styling**
+**********************/
+
+#home,
+#about{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #e0e2d5;
+}
+
+#contact,
+#gallery{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #6db8bb;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#contact,
+#gallery{
+	position: relative;
+}
+
+.form-group{
+	padding-top: 10px;
+}
+
+/*******use the below code if the content needs to be centered on the page*******/
+
+/*#form-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}*/
+
+/*********************
+*(4) Section styling**
+**********************/
+
+
+
+/*********************
+***(5) Image styling**
+**********************/
 
 #thumbnail{
 	margin-top: 10px;
@@ -132,25 +203,16 @@ p{
 	width: 100%;
 }*/
 
-.form-group{
-	padding-top: 10px;
-}
+/*********************
+***(5) Image styling**
+**********************/
 
-/*******use the below code if the content needs to be centered on the page*******/
 
-/*#form-container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 100%;
-}*/
 
-#social-media-list img{
-	width: 40px;
-	height: 40px;
-}
 
+/*********************
+***(6) Media queries**
+**********************/
 
 // Small devices (landscape phones, 544px and up)
 @media (min-width: 544px) { ... }
@@ -163,3 +225,7 @@ p{
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+
+/*********************
+***(6) Media queries**
+**********************/
