@@ -1,3 +1,8 @@
+$bg-one: cream;
+$bg-two: rgb(109, 184, 255);
+$dark-bg-txt-color: rgba(255, 255, 255, 0.5);
+$light-bg-txt-color: rgba(0, 0, 0, 0.5);
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -15,13 +20,13 @@ p{
 	text-align: justify;
 }
 
-#myButton,
-#back-to-top{
+.myButton,
+.back-to-top{
 	width: 40px;
 	height: 40px;
 }
 
-#back-to-top{
+.back-to-top{
 	display: none;
 	background-color: transparent;
 	border: 0;
@@ -39,44 +44,46 @@ p{
 }
 
 .overlay.active-overlay{
-	background-color: rgba(109, 184, 187, 1);
+	background-color: $bg-two;
 }
 
-#nav-item-container{
+.nav-item-container{
 	display: none;
 	opacity: 0;
 	list-style-type: none;
 	transition: all 1s;
 	border: 0;
+
+	.custom-nav-item{
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.custom-nav-link{
+		text-align: center;
+		font-weight: 600;
+		display: block;
+		color: $dark-bg-txt-color;
+		border: 0;
+		padding: 0;
+	}
+
+	.custom-nav-link.active{
+		color: #e0e2d5;
+		text-decoration: underline;
+	}
 }
 
-#nav-item-container #custom-nav-item{
-	width: 100%;
-	height: 60px;
-	line-height: 60px;
-}
-
-#nav-item-container #custom-nav-link{
-	text-align: center;
-	font-weight: 600;
-	display: block;
-	color: black;
-	border: 0;
-	padding: 0;
-}
-
-#nav-item-container.active-nav{
+.nav-item-container.active-nav{
 	opacity: 1;
 }
 
-#nav-item-container #custom-nav-link.active{
-	color: #e0e2d5;
-	text-decoration: underline;
-}
-
-#social-media-list img{
-	width: 40px;
-	height: 40px;
+.social-media-list{
+	img{
+		width: 40px;
+		height: 40px;
+	}
 }
 
 .container-fluid{
@@ -90,47 +97,52 @@ p{
 	text-align: center;
 	line-height: 50vh;
 	padding: 0; 
+	background: url('../images/image-1.jpg') no-repeat center center;
 }
 
 .row{
 	margin: 0;
 }
 
-#home,
-#about{
+.light-section{
 	width: 100%;
 	min-height: 100vh;
-	background-color: #e0e2d5;
+	background-color: $bg-one;
+	color: $light-bg-txt-color;
 }
 
-#contact,
-#gallery{
+.dark-section{
+	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	background-color: #6db8bb;
+	background-color: $bg-two;
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-
-#contact,
-#gallery{
-	position: relative;
+	color: $dark-bg-txt-color;
 }
 
 .form-group{
 	padding-top: 10px;
 }
 
-#thumbnail{
+.thumbnail{
 	margin-top: 10px;
+
+	img{
+		width: 130px;
+		height: 130px;
+	}
 }
 
-#thumbnail img{
-	width: 130px;
-	height: 130px;
+
+.modal{
+	img{
+		width: 100%;
+		height: 100%;
+		padding: 5px;
+	}
+
 }
-
-
 
 
 
