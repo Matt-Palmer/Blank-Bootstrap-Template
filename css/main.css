@@ -1,231 +1,159 @@
-/******CONTENTS******
-*********************
-
-1) General styling
-2) Nav styling
-3) Modified bootstrap
-4) Section styling
-
-*********************
-********************/
-
-/********************
-*1) General styling**
-********************/
-
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+/* line 6, ../sass/main.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body{
-	position: relative;
-	min-height: 100%;
+/* line 12, ../sass/main.scss */
+html, body {
+  position: relative;
+  min-height: 100%;
 }
 
-p{
-	margin-bottom: 0;
-	padding-top: 10px;
-	text-align: justify;
+/* line 17, ../sass/main.scss */
+p {
+  margin-bottom: 0;
+  padding-top: 10px;
+  text-align: justify;
 }
 
-/*********************
-**(1) General styling*
-*********************/
-
-/*********************
-****(2) Nav styling***
-*********************/
-
-#myButton,
-#back-to-top{
-	width: 40px;
-	height: 40px;
+/* line 23, ../sass/main.scss */
+.myButton,
+.back-to-top {
+  width: 40px;
+  height: 40px;
 }
 
-#back-to-top{
-	display: none;
-	background-color: transparent;
-	border: 0;
-	padding: 8px 12px;
-	float: right;
+/* line 29, ../sass/main.scss */
+.myButton,
+.back-to-top {
+  background-color: #6db8ff;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: white;
 }
 
-.overlay{
-	position: fixed;
-	height: 10vh;
-	width: 100%;
-	background-color: transparent;
-	z-index: 1;
-	transition: background-color 1s;
+/* line 38, ../sass/main.scss */
+.back-to-top {
+  display: none;
+  float: right;
 }
 
-.overlay.active-overlay{
-	/*background-color: rgba(224, 226, 213, 0.75);*/
-	background-color: rgba(109, 184, 187, 1);
+/* line 43, ../sass/main.scss */
+.overlay {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  transition: background-color 1s;
 }
 
-#nav-item-container{
-	display: none;
-	opacity: 0;
-	list-style-type: none;
-	transition: all 1s;
-	border: 0;
+/* line 52, ../sass/main.scss */
+.overlay.active-overlay {
+  background-color: #6db8ff;
 }
 
-#nav-item-container #custom-nav-item{
-	width: 100%;
-	height: 60px;
-	line-height: 60px;
+/* line 56, ../sass/main.scss */
+.nav-item-container {
+  display: none;
+  opacity: 0;
+  list-style-type: none;
+  transition: all 1s;
+  border: 0;
+}
+/* line 63, ../sass/main.scss */
+.nav-item-container .custom-nav-item {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+/* line 69, ../sass/main.scss */
+.nav-item-container .custom-nav-link {
+  text-align: center;
+  font-weight: 600;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  padding: 0;
+}
+/* line 78, ../sass/main.scss */
+.nav-item-container .custom-nav-link.active {
+  color: #e0e2d5;
+  text-decoration: underline;
 }
 
-#nav-item-container #custom-nav-link{
-	text-align: center;
-	font-weight: 600;
-	display: block;
-	color: black;
-	border: 0;
-	padding: 0;
+/* line 84, ../sass/main.scss */
+.nav-item-container.active-nav {
+  opacity: 1;
 }
 
-#nav-item-container.active-nav{
-	opacity: 1;
+/* line 89, ../sass/main.scss */
+.social-media-list img {
+  width: 40px;
+  height: 40px;
 }
 
-#nav-item-container #custom-nav-link.active{
-	color: #e0e2d5;
-	text-decoration: underline;
+/* line 95, ../sass/main.scss */
+.container-fluid {
+  padding: 0;
 }
 
-#social-media-list img{
-	width: 40px;
-	height: 40px;
+/* line 99, ../sass/main.scss */
+.jumbotron {
+  margin: 0;
+  border-radius: 0;
+  height: 50vh;
+  text-align: center;
+  line-height: 50vh;
+  padding: 0;
+  background: url("../images/image-1.jpg") no-repeat center center;
 }
 
-/*********************
-****(2) Nav styling***
-**********************/
-
-
-
-/*********************
-(3) Modified bootstrap
-**********************/
-
-.container-fluid{
-	padding: 0;
+/* line 109, ../sass/main.scss */
+.row {
+  margin: 0;
 }
 
-.jumbotron{
-	margin: 0;
-	border-radius: 0;
-	height: 50vh;
-	text-align: center; /*remove once image is in place*/
-	line-height: 50vh; /*remove once image is in place*/
-	padding: 0; /*remove once image is in place*/
+/* line 113, ../sass/main.scss */
+.light-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: cream;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.row{
-	margin: 0;
+/* line 120, ../sass/main.scss */
+.dark-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #6db8ff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-/*********************
-(3) Modified bootstrap
-**********************/
-
-
-/*********************
-*(4) Section styling**
-**********************/
-
-#home,
-#about{
-	width: 100%;
-	min-height: 100vh;
-	background-color: #e0e2d5;
+/* line 130, ../sass/main.scss */
+.form-group {
+  padding-top: 10px;
 }
 
-#contact,
-#gallery{
-	width: 100%;
-	min-height: 100vh;
-	background-color: #6db8bb;
-	padding-top: 10px;
-	padding-bottom: 10px;
+/* line 134, ../sass/main.scss */
+.thumbnail {
+  margin-top: 10px;
+}
+/* line 137, ../sass/main.scss */
+.thumbnail img {
+  width: 130px;
+  height: 130px;
 }
 
-#contact,
-#gallery{
-	position: relative;
+/* line 145, ../sass/main.scss */
+.modal img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
 }
-
-.form-group{
-	padding-top: 10px;
-}
-
-/*******use the below code if the content needs to be centered on the page*******/
-
-/*#form-container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 100%;
-}*/
-
-/*********************
-*(4) Section styling**
-**********************/
-
-
-
-/*********************
-***(5) Image styling**
-**********************/
-
-#thumbnail{
-	margin-top: 10px;
-}
-
-#thumbnail img{
-	width: 130px;
-	height: 130px;
-}
-
-/*******use the below code if the content needs to be centered on the page*******/
-
-/*#thumbnail-container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 100%;
-}*/
-
-/*********************
-***(5) Image styling**
-**********************/
-
-
-
-
-/*********************
-***(6) Media queries**
-**********************/
-
-// Small devices (landscape phones, 544px and up)
-@media (min-width: 544px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-/*********************
-***(6) Media queries**
-**********************/

@@ -1,7 +1,7 @@
-$bg-one: cream;
-$bg-two: rgb(109, 184, 255);
-$dark-bg-txt-color: rgba(255, 255, 255, 0.5);
-$light-bg-txt-color: rgba(0, 0, 0, 0.5);
+$cream: cream;
+$blue: rgb(109, 184, 255);
+$dark-txt: rgba(255, 255, 255, 0.5);
+$light-txt: rgba(0, 0, 0, 0.5);
 
 *{
 	box-sizing: border-box;
@@ -26,11 +26,17 @@ p{
 	height: 40px;
 }
 
+.myButton,
+.back-to-top{
+	background-color: $blue;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	color: white;
+}
+
 .back-to-top{
 	display: none;
-	background-color: transparent;
-	border: 0;
-	padding: 8px 12px;
 	float: right;
 }
 
@@ -44,7 +50,7 @@ p{
 }
 
 .overlay.active-overlay{
-	background-color: $bg-two;
+	background-color: $blue;
 }
 
 .nav-item-container{
@@ -64,7 +70,7 @@ p{
 		text-align: center;
 		font-weight: 600;
 		display: block;
-		color: $dark-bg-txt-color;
+		color: $dark-txt;
 		border: 0;
 		padding: 0;
 	}
@@ -107,18 +113,18 @@ p{
 .light-section{
 	width: 100%;
 	min-height: 100vh;
-	background-color: $bg-one;
-	color: $light-bg-txt-color;
+	background-color: $cream;
+	color: $light-txt;
 }
 
 .dark-section{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	background-color: $bg-two;
+	background-color: $blue;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	color: $dark-bg-txt-color;
+	color: $dark-txt;
 }
 
 .form-group{

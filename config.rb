@@ -1,5 +1,3 @@
-add_import_path = "sass/storm-ui"
-
 http_path =	"/"
 css_dir = "css"
 sass_dir = "sass"

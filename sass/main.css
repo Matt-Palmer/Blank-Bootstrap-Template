@@ -17,11 +17,16 @@ p {
   width: 40px;
   height: 40px; }
 
+.myButton,
+.back-to-top {
+  background-color: #6db8ff;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: white; }
+
 .back-to-top {
   display: none;
-  background-color: transparent;
-  border: 0;
-  padding: 8px 12px;
   float: right; }
 
 .overlay {
