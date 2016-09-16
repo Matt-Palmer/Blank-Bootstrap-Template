@@ -85,6 +85,7 @@ p{
 }
 
 .social-media-list{
+	padding-top: 50px;
 	img{
 		width: 40px;
 		height: 40px;
@@ -111,7 +112,7 @@ p{
 }
 
 .light-section{
-	background-color: $cream;
+	background-color: white;
 	color: $light-txt;
 }
 
@@ -123,8 +124,8 @@ p{
 .dark-section,
 .light-section{
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 
@@ -152,13 +153,74 @@ p{
 
 }
 
+.btn{
+	margin-top: 30px;
+	width: 100%;
+}
+
+h5{
+	text-align: left;
+	padding-bottom: 10px;
+}
 
 @media(min-width: 544px){
 	.thumbnail{
 		img{
-			width: 200px;
-			height: 200px;
+			width: 180px;
+			height: 180px;
 		}
-	}	
+	}
 }
 
+@media (min-width: 768px) {
+
+ }
+
+@media (min-width: 992px) { 
+.thumbnail{
+	a{
+			position: relative;
+			display: block;
+			width: 178px;
+			height: 178px;
+			margin: 0 auto;
+
+			.thumbnail-title{
+				position: absolute;
+				height: 50px;
+				background-color: $dark-txt;
+				color: $light-txt;
+				left: 0;
+				bottom: 0;
+				margin: 0;
+				width: 100%;
+				line-height: 45px;
+				display: block;
+				opacity: 0;
+				transition: opacity 1s;
+
+			}
+
+			&:hover{
+				.thumbnail-title{
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.thumbnail{
+		img{
+			width: 230px;
+			height: 230px;
+		}
+
+		a{
+			width: 228px;
+			height: 228px;
+		}
+	}
+ }
